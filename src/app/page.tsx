@@ -12,8 +12,8 @@ export default function Home() {
                         <div className="max-w-[1420px] h-full flex items-center mx-auto p-2">
                             <div className="md:px-16 ">
                                 <h1 className="text-[30px] md:text-[42px] font-[700]  tracking-[0.2px] max-w-[209px] sm:max-w-[1009px] text-white">
-                                    Hoppn! Life-Changing Technology <br /> for
-                                    everyday challenges
+                                    Inspire creativity & Implement Solutions
+                                    that open More Opportunities for the People
                                 </h1>
                                 <p className="text-[16px] md:text-[24px] font-[500] leading-[25.6px] md:leading-[36px] tracking-[0.2px] max-w-[263px] sm:max-w-[564px] text-white my-4">
                                     Your Gateway to a World of Delicious African
