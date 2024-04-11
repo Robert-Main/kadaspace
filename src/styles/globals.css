@@ -1,0 +1,222 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+
+        --card: 0 0% 100%;
+        --card-foreground: 222.2 84% 4.9%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 84% 4.9%;
+
+        --primary: 222.2 47.4% 11.2%;
+        --primary-foreground: 210 40% 98%;
+
+        --secondary: 210 40% 96.1%;
+        --secondary-foreground: 222.2 47.4% 11.2%;
+
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+        --ring: 222.2 84% 4.9%;
+
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 222.2 84% 4.9%;
+        --foreground: 210 40% 98%;
+
+        --card: 222.2 84% 4.9%;
+        --card-foreground: 210 40% 98%;
+
+        --popover: 222.2 84% 4.9%;
+        --popover-foreground: 210 40% 98%;
+
+        --primary: 210 40% 98%;
+        --primary-foreground: 222.2 47.4% 11.2%;
+
+        --secondary: 217.2 32.6% 17.5%;
+        --secondary-foreground: 210 40% 98%;
+
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%;
+
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+
+        --border: 217.2 32.6% 17.5%;
+        --input: 217.2 32.6% 17.5%;
+        --ring: hsl(212.7, 26.8%, 83.9);
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@layer utilities {
+    .pause {
+        animation-play-state: running;
+        animation-delay: 2s;
+    }
+}
+
+* {
+    font-family: "Montserrat", sans-serif !important;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero-text-shadow {
+    text-shadow: 0px 5px 0px #000;
+}
+
+.our-story-text-shadow {
+    text-shadow: 0px 4px 0px #000;
+}
+
+.our-story-overlay {
+    background: rgba(241, 80, 41, 0.4);
+}
+
+.become-vendors-gradient {
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0) 82.29%);
+}
+
+.our-story-shadow {
+    box-shadow: 0px 15px 12px 0px rgba(0, 0, 0, 0.25);
+    background: white;
+}
+
+.agency-shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.blog-hero-bg {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slick-dots {
+    display: block !important;
+    gap: 4px;
+    bottom: -60px !important;
+}
+
+.slick-dots li button:before {
+    font-size: 20px !important;
+    width: 30px !important;
+    height: 30px !important;
+    color: #f15029 !important;
+}
+
+.slick-dots li {
+    margin: 0px 8px !important;
+}
+
+.vendor .slick-dots {
+    bottom: 60px !important;
+}
+
+.vendor .slick-dots li button:before {
+    color: #fcdcd4 !important;
+    opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #f15029 !important;
+}
+
+.registration-top-bg {
+    /* Ellipse 27 */
+
+    position: absolute;
+    width: 467px;
+    height: 259px;
+    right: 0px;
+    top: -17px;
+
+    /* hoppn/Primary/600 */
+    background: #f15029;
+    opacity: 0.6;
+    filter: blur(240px);
+}
+
+.registration-bottom-right-bg {
+    /* Ellipse 38 */
+
+    position: absolute;
+    width: 467px;
+    height: 259px;
+    right: 0px;
+    bottom: 0px;
+    /* hoppn/Primary/600 */
+    background: #f15029;
+    opacity: 0.6;
+    filter: blur(240px);
+}
+
+.registration-bottom-left-bg {
+    /* Ellipse 39 */
+
+    position: absolute;
+    width: 467px;
+    height: 259px;
+    left: 0px;
+    bottom: 0px;
+
+    /* hoppn/Primary/600 */
+    background: #f15029;
+    opacity: 0.6;
+    filter: blur(240px);
+}
+
+.thank-dialog-shadow {
+    background: rgb(228, 21, 21);
+    box-shadow: 0px 12px 14px 0px rgba(153, 155, 168, 0.18);
+}
+
+elementor .elementor-background-overlay,
+.elementor .elementor-background-slideshow {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.elementor-background-overlay {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #000B22CF 0%, #00000000 100%);
+    opacity: 1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
